@@ -1,0 +1,238 @@
+header {
+  width: 100%;
+  height: 169px;
+  .top {
+    width: 100%;
+    height: 58px;
+    & img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  .middle {
+    width: 100%;
+    height: 68px;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logoSearchbar {
+      width: 852px;
+      height: 68px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      .logo {
+        width: 211px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        & img {
+          width: 195px;
+          height: 30px;
+          object-fit: cover;
+        }
+      }
+      .searchbar {
+        width: 594px;
+        height: 42px;
+        background-color: var(--bg-Snowflake);
+        border-radius: 8px;
+        padding: 0 16px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .searchIcon {
+          width: 24px;
+          height: 24px;
+        }
+        & input {
+          width: calc(100% - 24px);
+          height: 42px;
+          background-color: transparent;
+          padding: 0 16px;
+          border: none;
+          outline: unset;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          &::placeholder {
+            font-size: 12px;
+            color: var(--bg-Gunmetal-Gray);
+          }
+        }
+      }
+    }
+    .loginShopcart {
+      width: 199px;
+      height: 68px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+      .loginBtn {
+        width: 134px;
+        height: 40px;
+        padding: 8px 16px;
+        border: 1px solid var(--bg-Wind-Chime);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .loginLink {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          text-decoration: none;
+          font-size: 12px;
+          color: var(--bg-Black-Wash);
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+      .line {
+        width: 1px;
+        height: 24px;
+        background-color: var(--bg-Wind-Chime);
+        margin: 8px 12px;
+        display: block;
+      }
+      .shopcart {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 43px;
+    padding: 0px 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.14);
+    .menubar {
+      width: 986px;
+      height: 43px;
+      .menubarNav {
+        width: 100%;
+        height: 100%;
+        .menubarUl {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          .menuCategory {
+            width: 140px;
+            height: 100%;
+            font-size: 14px;
+            color: var(--bg-Genie);
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .megaMenu{
+              width: 74.4%;
+              height: 70%;
+              position: absolute;
+              top: 169px;
+              background-color: aquamarine;
+              z-index: 99999999999999;
+              .categoryUList{
+                width: 18%;
+                height: 100%;
+                overflow: scroll;
+                direction: ltr;
+                .categoryItem{
+                  width: 100%;
+                  height: 50px;
+                  background-color: var(--bg-White-Smoke);
+                  padding: 12px 8px;
+                  display: flex;
+                  flex-flow: row wrap;
+                  align-items: center;
+                  gap: 8px;
+                  color: var(--bg-Genie);
+                  font-size: 12px;
+                  list-style: none;
+                  cursor: pointer;
+                  .itemProducts{
+                    width: 82%;
+                    height: 100%;
+                    background-color: red;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    column-gap: 10px;
+                    .allProducts{
+                      width: 100%;
+                      height: 45px;
+                      background-color: green;
+                      z-index: 99999999999999999999;
+                    }
+                    .subset{
+                      width: 24%;
+                      height: calc(100% - 45px);
+                      background-color: antiquewhite;
+                      z-index: 999999999999999999999;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .menubarListItem {
+            width: fit-content;
+            height: 100%;
+            padding: 0px 12px;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+            cursor: pointer;
+            .menubarLinks {
+              text-decoration: none;
+              font-size: 12px;
+              display: flex;
+              align-items: center;
+              color: var(--bg-Grey-Web);
+              gap: 4px;
+            }
+            .fa-solid {
+              font-size: 14px;
+              color: var(--bg-Silent-Film);
+            }
+          }
+          .line {
+            width: 1px;
+            height: 16px;
+            background-color: var(--bg-Wind-Chime);
+          }
+        }
+      }
+    }
+    .location {
+      width: fit-content;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      .locationLink {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        text-decoration: none;
+        color: var(--bg-Genie);
+        cursor: pointer;
+      }
+    }
+  }
+}
