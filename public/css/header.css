@@ -137,55 +137,177 @@ header {
             display: flex;
             align-items: center;
             cursor: pointer;
-            .megaMenu{
+            .megaMenu {
               width: 74.4%;
               height: 70%;
               position: absolute;
               top: 169px;
-              background-color: aquamarine;
+              background-color: lightgreen;
               z-index: 99999999999999;
-              .categoryUList{
+              display: none;
+              transition: 300ms;
+              -webkit-transition: 300ms;
+              -moz-transition: 300ms;
+              -ms-transition: 300ms;
+              -o-transition: 300ms;
+              box-shadow: 0px 0px 5px var(--bg-Wind-Chime);
+              border-bottom-left-radius: 8px;
+
+              .categoryUList {
                 width: 18%;
                 height: 100%;
                 overflow: scroll;
                 direction: ltr;
-                .categoryItem{
+                .categoryItemMOBILE,
+                .categoryItemBOOK,
+                .categoryItemCAR,
+                .categoryItemCOSMETIC,
+                .categoryItemDIGIL,
+                .categoryItemELECTRICAL,
+                .categoryItemFOOD,
+                .categoryItemGIFT,
+                .categoryItemGOLD,
+                .categoryItemHEALTH,
+                .categoryItemKITCHEN,
+                .categoryItemLOCAL,
+                .categoryItemMODE,
+                .categoryItemSPORT,
+                .categoryItemTOOL,
+                .categoryItemTOY {
                   width: 100%;
                   height: 50px;
                   background-color: var(--bg-White-Smoke);
                   padding: 12px 8px;
-                  display: flex;
-                  flex-flow: row wrap;
-                  align-items: center;
-                  gap: 8px;
-                  color: var(--bg-Genie);
-                  font-size: 12px;
                   list-style: none;
-                  cursor: pointer;
-                  .itemProducts{
+                  .megaItemLink {
+                    text-decoration: none;
+                    color: var(--bg-Genie);
+                    font-size: 12px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: right;
+                    gap: 8px;
+                    cursor: pointer;
+                  }
+                  .itemProductsBOOK,
+                  .itemProductsCAR,
+                  .itemProductsCOSMETIC,
+                  .itemProductsDIGIL,
+                  .itemProductsFOOD,
+                  .itemProductsELECTRICAL,
+                  .itemProductsGIFT,
+                  .itemProductsGOLD,
+                  .itemProductsHEALTH,
+                  .itemProductsLOCAL,
+                  .itemProductsMOBILE,
+                  .itemProductsMODE,
+                  .itemProductsSPORT,
+                  .itemProductsTOOL,
+                  .itemProductsTOY {
                     width: 82%;
                     height: 100%;
-                    background-color: red;
+                    background-color: #ffffff;
+                    overflow: auto;
                     position: absolute;
                     left: 0;
                     top: 0;
                     display: flex;
                     flex-flow: row wrap;
                     column-gap: 10px;
-                    .allProducts{
+                    padding: 20px 20px 0px;
+                    .allProducts {
                       width: 100%;
-                      height: 45px;
-                      background-color: green;
+                      height: 26px;
+                      background-color: var(--bg-White);
                       z-index: 99999999999999999999;
+                      display: flex;
+                      flex-flow: row wrap;
+                      justify-content: right;
+                      align-items: center;
+                      color: var(--bg-Munsell-Blue);
+                      font-size: 12px;
+                      margin: 0px 0px 20px;
                     }
-                    .subset{
+                    .subset {
                       width: 24%;
-                      height: calc(100% - 45px);
-                      background-color: antiquewhite;
+                      height: calc(100% - 46px);
+
                       z-index: 999999999999999999999;
+                      color: var(--bg-Black-Wash);
+                      font-size: 14px;
+                      .subsetUList {
+                        width: 100%;
+                        height: 100%;
+
+                        .subsetListItem {
+                          width: 100%;
+                          height: fit-content;
+
+                          list-style: none;
+                          display: flex;
+                          flex-flow: row wrap;
+                          .subsetItemLinks {
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: right;
+                            align-items: center;
+                            text-decoration: none;
+                            color: var(--bg-Black-Wash);
+                            .lineProuct {
+                              width: 2px;
+                              height: 14px;
+                              background-color: var(--bg-DesireLine);
+                              margin-left: 8px;
+                            }
+                          }
+                          .secondUlist {
+                            width: 100%;
+                            height: fit-content;
+
+                            .secondListItem {
+                              width: 100%;
+                              height: 34px;
+
+                              list-style: none;
+                              padding: 4px 0px;
+                              display: flex;
+                              align-items: center;
+                              .linkOfProducts {
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: right;
+                                align-content: center;
+                                text-decoration: none;
+                                color: var(--bg-Gunmetal-Gray);
+                                font-size: 12px;
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
+                  .itemProductsKITCHEN {
+                    width: 70%;
+                    height: 100%;
+                    background-color: red;
+                    overflow: auto;
+                    position: absolute;
+                    right: 18%;
+                    top: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    column-gap: 10px;
+                    padding: 20px 20px 0px;
+                    z-index: 99999999999999999999999;
+                  }
                 }
+              }
+            }
+            &:hover {
+              .megaMenu {
+                display: block;
               }
             }
           }
