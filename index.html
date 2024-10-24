@@ -3205,6 +3205,27 @@
           </div>
         </div>
         <!-- slider1 ends -->
+        <!-- slider2 starts -->
+         <div class="container2">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./public/images/slider2/1.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/2.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/3.gif" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/4.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/5.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/6.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/7.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/8.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/9.webp" alt="Digi ADs"></div>
+              <div class="swiper-slide"><img src="./public/images/slider2/10.gif" alt="Digi ADs"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+         </div>
+        <!-- slider2 ends -->
       </div>
       <!-- body section ends -->
     </div>
@@ -3219,6 +3240,23 @@
           prevEl: ".swiper-button-prev",
         },
       });
+      var swiper = new Swiper(".mySwiper2", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      loop: true, 
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
     </script>
   </body>
 </html>
