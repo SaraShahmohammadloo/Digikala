@@ -8,6 +8,12 @@
 .wrapper {
   width: 100%;
 }
+.bodySection{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
 @font-face {
   font-family: IranYekan;
   src: url("../fonts/IRANYekanWeb-Bold.eot");
@@ -21,7 +27,6 @@
   --bg-Black-Wash: #0c0c0c;
   --bg-Wind-Chime: #e0e0e2;
   --bg-solid-black: #000000;
-  --bg-Wind-Chime: #e0e0e2;
   --bg-Silent-Film: #a1a3a8;
   --bg-Midnight-Sky: #424750;
   --bg-Genie: #3f4064;
@@ -31,5 +36,5 @@
   --bg-White: #ffffff;
   --bg-Desire: #ef394e;
   --bg-DesireLine: #ef4056;
-
+  --bg-Pāua: #23254e;
 }
