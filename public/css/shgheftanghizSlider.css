@@ -1,0 +1,282 @@
+.shegheftanghizSlider {
+  width: 87%;
+  height: 296px;
+  background-color: var(--bg-Desire);
+  padding: 20px 0px;
+  border-radius: 16px;
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-wrapper {
+      .swiper-slide {
+        width: 160px;
+        height: 254px;
+        font-size: 18px;
+        background: var(--bg-White);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        .shegheftanghizLink {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          .logos {
+            width: 100%;
+            height: 210px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .timer {
+              width: 94px;
+              height: 26px;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              .count {
+                width: 26px;
+                height: 26px;
+                background-color: var(--bg-White);
+                border-radius: 5px;
+                font-size: 15px;
+                text-align: center;
+                line-height: 26px;
+                color: var(--bg-Pāua);
+              }
+              .seprate {
+                font-size: 15px;
+                font-weight: bolder;
+                color: var(--bg-White);
+              }
+            }
+          }
+          .seeAllOffers {
+            width: 90px;
+            height: 26px;
+            font-size: 12px;
+            color: var(--bg-White);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+          }
+          & img {
+            display: block;
+            width: 132px;
+            height: 132px;
+            object-fit: cover;
+          }
+          .description {
+            width: 100%;
+            height: 40px;
+            color: var(--bg-Grey-Web);
+            font-size: 12px;
+            line-height: 20px;
+            overflow: hidden;
+          }
+          .price {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            .offPrice {
+              width: 100%;
+              height: 24px;
+              position: relative;
+              color: var(--bg-Genie);
+              font-size: 14px;
+              display: flex;
+              gap: 3px;
+              flex-flow: row wrap;
+              align-items: center;
+              justify-content: left;
+              .offAmount {
+                width: 34px;
+                height: 20px;
+                padding: 0px 4px;
+                font-size: 12px;
+                position: absolute;
+                bottom: 2px;
+                right: 0;
+                border-radius: 16px;
+                background-color: var(--bg-Persian-Red);
+                color: var(--bg-White);
+                text-align: center;
+                line-height: 20px;
+              }
+            }
+            .realPrice {
+              width: 100%;
+              height: 21px;
+              color: var(--bg-Foil);
+              text-decoration: line-through;
+              font-size: 12px;
+              text-align: left;
+              padding: 0px 20px;
+            }
+          }
+          .circlesvg {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            border: 2px solid var(--bg-Caribbean-Blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .seeAll {
+            width: 76px;
+            height: 30px;
+            color: var(--bg-Genie);
+            font-size: 12px;
+            margin: 12px;
+            line-height: 30px;
+            text-align: center;
+          }
+        }
+      }
+      .differ {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: transparent;
+        .allProductLink {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.supermarket {
+  width: 87%;
+  height: 112px;
+  border-radius: 16px;
+  background-color: var(--bg-Super-Silver);
+  padding: 0px 40px;
+  .supermarketLink {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--bg-Green-Revolution);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    .supermarketBaner {
+      width: 466px;
+      height: 62px;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      .basket {
+        width: 66px;
+        height: 62px;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .SupermarketLogo {
+        width: 290px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .offRange {
+        width: 108px;
+        height: 28px;
+        background-color: var(--bg-Green-Revolution);
+        padding: 0px 12px;
+        border-radius: 9999px;
+        color: var(--bg-White);
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+    .supermarketProducts {
+      width: 634px;
+      height: 74px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .onlyProduct {
+        width: 492px;
+        height: 74px;
+        display: flex;
+        justify-content: space-around;
+        .productItem {
+          width: 74px;
+          height: 74px;
+          border-radius: 50%;
+          background-color: var(--bg-White);
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & img {
+            width: 58px;
+            height: 58px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .productOff {
+            width: 34px;
+            height: 20px;
+            background-color: var(--bg-Persian-Red);
+            border-radius: 16px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 12px;
+            color: var(--bg-White);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .productButton {
+        width: 138px;
+        height: 50px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+        background-color: var(--bg-White);
+        border-radius: 9999px;
+      }
+    }
+  }
+}
+.moreDigiAds {
+  width: 87%;
+  height: 244px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  .brand {
+    width: 324px;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+}

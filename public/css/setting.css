@@ -8,10 +8,11 @@
 .wrapper {
   width: 100%;
 }
-.bodySection{
+.bodySection {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   gap: 20px;
 }
 @font-face {
@@ -37,4 +38,11 @@
   --bg-Desire: #ef394e;
   --bg-DesireLine: #ef4056;
   --bg-Pāua: #23254e;
+  --bg-Desire: #ef3d51;
+  --bg-Persian-Red: #d32f2f;
+  --bg-Green-Revolution: #029a49;
+  --bg-Super-Silver: #ebeeee;
+  --bg-Foil: #c0c2c5;
+  --bg-Caribbean-Blue: #19bfd3;
+  --global-space: 6.5%;
 }

@@ -1,0 +1,47 @@
+.digi-more {
+  width: 100%;
+  height: 144px;
+  padding: 0px var(--global-space);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  .details {
+    width: 104px;
+    height: 100%;
+    padding: 8px 0px;
+    & figure {
+      width: 100%;
+      height: 100%;
+      .moreLinks {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: var(--bg-Genie);
+        font-size: 11px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        line-height: 24px;
+        .iconimg,
+        .iconsvg {
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+        }
+        .iconsvg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--bg-Snowflake);
+        }
+        & figcaption {
+          width: 80px;
+          height: 47px;
+          margin: 4px 0px 0px;
+          padding: 0px 16px;
+        }
+      }
+    }
+  }
+}
