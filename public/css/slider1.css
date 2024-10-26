@@ -30,14 +30,14 @@
             align-items: center;
             border: 3px solid rgb(186, 16, 186);
             & img {
-                display: block;
-                width: 74px;
-                height: 74px;
-                object-fit: cover;
-                border-radius: 50%;
-              }
+              display: block;
+              width: 74px;
+              height: 74px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
           }
-          & figcaption{
+          & figcaption {
             width: 84px;
             height: 47px;
             margin-top: 8px;
@@ -47,27 +47,64 @@
         }
       }
     }
-    .swiper-button-next{
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        background-color: var(--bg-White);
-        border: 1px solid var(--bg-Wind-Chime);
-        color: var(--bg-Grey-Web);
-        &:hover{
-            color: var(--bg-Midnight-Sky);
-        }
+    .swiper-button-next {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: var(--bg-White);
+      border: 1px solid var(--bg-Wind-Chime);
+      color: var(--bg-Grey-Web);
+      &:hover {
+        color: var(--bg-Midnight-Sky);
+      }
     }
-    .swiper-button-prev{
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        background-color: var(--bg-White);
-        border: 1px solid var(--bg-Wind-Chime);
-        color: var(--bg-Grey-Web);
-        &:hover{
-            color: var(--bg-Midnight-Sky);
-        }
+    .swiper-button-prev {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: var(--bg-White);
+      border: 1px solid var(--bg-Wind-Chime);
+      color: var(--bg-Grey-Web);
+      &:hover {
+        color: var(--bg-Midnight-Sky);
+      }
+    }
+  }
+}
+& a {
+  .support {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    padding: 12px;
+    bottom: 32px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-DesireLine);
+    z-index: 9999999999999999999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .supermarketICON {
+    width: 130px;
+    height: 52px;
+    padding: 10px 12px;
+    position: fixed;
+    bottom: 32px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-White);
+    font-size: 15px;
+    border-radius: 28px;
+    gap: 7px;
+    background-color: var(--bg-Green-Revolution);
+    z-index: 9999999999999999999999999999999;
+    .fa-basket-shopping {
+      color: var(--bg-White);
+      font-size: 24px;
     }
   }
 }
