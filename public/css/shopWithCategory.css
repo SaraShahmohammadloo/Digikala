@@ -1,0 +1,65 @@
+.shopWhithCategory {
+  width: 87%;
+  height: 400px;
+  padding: 16px 5% 40px;
+  .shopTitle {
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 19px;
+    margin-bottom: 36px;
+  }
+  .shoppingItemCategory {
+    width: 100%;
+    height: calc(100% - 80px);
+    .ItemsRow {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      .itemInfo {
+        width: 140px;
+        height: 100%;
+        padding: 0px 16px;
+        .shopItemLink{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: var(--bg-Black-Wash);
+            font-size: 12px;
+            text-align: center;
+            .image{
+                width: 100%;
+                height: 100%;
+                & img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+
+                }
+            }
+        }
+      }
+    }
+  }
+}
+.moreOFF{
+    width: 87%;
+    height: 264px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .specialOffer{
+        width: 49.4%;
+        height: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+}
