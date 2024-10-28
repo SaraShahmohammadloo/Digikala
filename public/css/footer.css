@@ -238,6 +238,7 @@
           height: 26px;
           color: var(--bg-Caribbean-Blue);
           font-size: 12px;
+          text-decoration: none;
           display: flex;
           flex-flow: row wrap;
           align-items: center;
