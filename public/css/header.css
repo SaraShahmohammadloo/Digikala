@@ -5,11 +5,13 @@ header {
     width: 100%;
     height: 58px;
     position: fixed;
-    z-index: 99999999999999999999999;
+    z-index:9999999999999999999;
     & img {
       width: inherit;
       height: inherit;
       object-fit: cover;
+    z-index: 99999999999999999999;
+
     }
   }
   .middle {
@@ -20,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 58px;
+    top: 56px;
     background-color: var(--bg-White);
     z-index: 9999999999999999999999999;
     .logoSearchbar {
@@ -119,12 +121,14 @@ header {
     width: 100%;
     height: 43px;
     padding: 0px 16px;
+    background-color: #ffffff;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.14);
-    position: sticky;
-    top: 126px;
+    position: relative;
+    top: 129px;
+    left: 0;
     .menubar {
       width: 986px;
       height: 43px;
@@ -147,10 +151,10 @@ header {
             cursor: pointer;
             .megaMenu {
               width: 74.4%;
-              height: 70%;
+              height: 500px;
               position: absolute;
-              top: 169px;
-              z-index: 99999999999999;
+              top: 43px;
+              z-index: 99999999999999999999999;
               display: none;
               transition: 300ms;
               -webkit-transition: 300ms;
@@ -299,7 +303,7 @@ header {
                     display: flex;
                   }
                   .itemProductsKITCHEN {
-                    width: 70%;
+                    width: 80%;
                     height: 100%;
                     right: 18%;
                     z-index: 99999999999999999999999999999;
@@ -361,10 +365,94 @@ header {
       }
     }
     .location {
-      width: fit-content;
+      width: 208px;
       height: 43px;
       display: flex;
       align-items: center;
+      .cityContent{
+        width: 462px;
+        height: 574px;
+        background-color: white;
+        box-shadow: 1px 1px 10px lightslategray;
+        border-radius: 16px;
+        z-index: 999999999999999999999999;
+        margin: auto;
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 464px / 2);
+        display: none;
+        overflow: auto;
+        .cityBanner{
+          width: 100%;
+          height: 50px;
+          margin-top: 12px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding:0px  16px;
+          position: relative;
+          &::before {
+            content: "";
+            width: 95%;
+            height: 1px;
+            position: absolute;
+            top: 100%;
+            left: 10px;
+            background-color: var(--bg-Wind-Chime);
+          }
+        }
+        .automatLocation{
+          width: 100%;
+          height: 50px;
+          padding: 8px 20px;
+          color: var(--bg-Dark-Turquoise);
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: right;
+          align-items: center;
+          gap: 10px;
+          font-size: 15px;
+          text-decoration: none;
+        }
+        .cityNAME{
+          width: calc(100% -50px);
+          height: 50px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 20px;
+          font-size: 15px;
+          color: var(--bg-Genie);
+          position: relative;
+          text-decoration: none;
+          &::before {
+            content: "";
+            width: 88%;
+            height: 1px;
+            position: absolute;
+            top: 100%;
+            left: 30px;
+            background-color: var(--bg-Wind-Chime);
+          }
+        }
+      }
+      & label{
+        width: 200px;
+        height: 24px;
+        text-align: center;
+        line-height: 21.5px;
+        display: inline-block;
+        cursor: pointer;
+        text-align: left;
+      }
+      & input{
+        display: none;
+      }
+      & input[id="show"]:checked ~ .cityContent{
+        display: block;
+      }
       .locationLink {
         display: flex;
         align-items: center;

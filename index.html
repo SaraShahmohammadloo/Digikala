@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="./FontAwesome.Pro.6.6.0/FontAwesome.Pro.6.6.0/css/all.css"
     />
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- project starts -->
@@ -28,12 +28,12 @@
         <div class="middle">
           <!-- logo and search bar section starts -->
           <div class="logoSearchbar">
-            <div class="logo">
+            <a href="#" class="logo">
               <img
                 src="./public/images/full-horizontal.svg"
                 alt="digikala-logo"
               />
-            </div>
+            </a>
             <div class="searchbar">
               <div class="searchIcon">
                 <svg
@@ -2789,7 +2789,7 @@
                 </div>
                 <div class="line"></div>
                 <li class="menubarListItem">
-                  <a href="" class="menubarLinks">
+                  <a href="./shegheftAnghizha.html" class="menubarLinks">
                     <svg
                       xmlns:xlink="http://www.w3.org/1999/xlink"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2942,8 +2942,9 @@
             </nav>
           </div>
           <!-- menu section ends -->
+          <!-- location starts -->
           <div class="location">
-            <a href="" class="locationLink"
+            <label for="show" class="locationLink"
               ><svg
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns="http://www.w3.org/2000/svg"
@@ -2966,12 +2967,1259 @@
                 </defs>
                 <use xlink:href="#pin" fill="var(--bg-Midnight-Sky)"></use>
               </svg>
-              لطفا شهر خود را انتخاب کنید</a
-            >
+              لطفا شهر خود را انتخاب کنید
+            </label>
+            <input type="radio" id="show" name="selectCity" />
+            <input type="radio" id="hide" name="selectCity" />
+            <div class="cityContent">
+              <din class="cityBanner">
+                <span>انتخاب شهر</span>
+                <label for="hide" class="hide">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="
+                      width: 24px;
+                      height: 24px;
+                      fill: var(--color-icon-high-emphasis);
+                    "
+                    width="24"
+                    height="24"
+                  >
+                    <defs>
+                      <symbol
+                        id="close"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M18.364 7.05L16.95 5.636 12 10.586l-4.95-4.95L5.636 7.05l4.95 4.95-4.95 4.95 1.414 1.414 4.95-4.95 4.95 4.95 1.414-1.414-4.95-4.95 4.95-4.95z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </symbol>
+                    </defs>
+                    <use xlink:href="#close"></use>
+                  </svg>
+                </label>
+              </din>
+              <a href="#" class="automatLocation">
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 24px;
+                    height: 24px;
+                    fill: var(--bg-Dark-Turquoise);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="autoDetectOn"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.94 11A8.994 8.994 0 0013 3.06V1h-2v2.06A8.994 8.994 0 003.06 11H1v2h2.06A8.994 8.994 0 0011 20.94V23h2v-2.06A8.994 8.994 0 0020.94 13H23v-2h-2.06zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 4c0 3.87 3.13 7 7 7s7-3.13 7-7-3.13-7-7-7-7 3.13-7 7z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#autoDetectOn"></use>
+                </svg>
+                مکان‌یابی خودکار
+              </a>
+              <a href="#" class="cityNAME">
+                آذربایجان شرقی
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                آذربایجان غربی
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                اردبیل
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                اصفهان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                البرز
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                ایلام
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                بوشهر
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                تهران
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                چهار محال و بختیاری
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                خراسان جنوبی
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                خراسان رضوی
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                خراسان شمالی
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                خوزستان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                زنجان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                سمنان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                سیستان و بلوچستان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                فارس
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                قزوین
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                قم
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                کردستان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                کرمان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                کرمانشاه
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                کهگیلویه و بویراحمد
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                گلستان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                گیلان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                لرستان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                مازندران
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                مرکزی
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                هرمزگان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                همدان
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                یزد
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+              <a href="#" class="cityNAME">
+                هرات
+
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    width: 16px;
+                    height: 16px;
+                    fill: var(--bg-Genie);
+                  "
+                  width="24"
+                  height="24"
+                >
+                  <defs>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                    <symbol
+                      id="chevronLeft"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use xlink:href="#chevronLeft"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <!-- bottom section ends -->
       </header>
+
       <!-- header ends -->
       <!-- body section starts -->
       <div class="bodySection">
@@ -5045,11 +6293,7 @@
               <svg
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns="http://www.w3.org/2000/svg"
-                style="
-                  width: 24px;
-                  height: 24px;
-                  fill: var(--bg-Nacho-Cheese);
-                "
+                style="width: 24px; height: 24px; fill: var(--bg-Nacho-Cheese)"
                 width="24"
                 height="24"
               >
@@ -7249,7 +8493,7 @@
       <!-- support and supermarket fixed icon ends -->
     </div>
     <!-- project ends -->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 12,

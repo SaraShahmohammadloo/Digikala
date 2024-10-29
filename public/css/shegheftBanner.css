@@ -1,0 +1,20 @@
+.shegheftBanner{
+    width: 100%;
+    height: 64px;
+    background-color: var(--bg-Desire);
+    text-align: center;
+    padding: 12px;
+}
+.shegheftImage{
+    width: 100%;
+    height: 402px;
+    .shegheftImageLink{
+        width: 100%;
+        height: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
