@@ -64,46 +64,46 @@
               width: calc(100% - 200px);
               height: 100%;
               padding-right: 12px;
-                .productDetail{
-                    width: 100%;
-                    height: 20%;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: right;
-                    align-items: center;
-                    & h3{
-                        font-size: 12px;
-                        color: var(--bg-Genie);
-                    }
-                    .productColor{
-                        width: 14px;
-                        height: 14px;
-                        border-radius: 50%;
-                    }
-                    .colorName{
-                        width: calc(100% - 64px);
-                        color: var(--bg-Midnight-Sky);
-                        margin-right: 8px;
-                        font-size: 10px;
-                    }
-                    .productRate{
-                        color: var(--bg-Genie);
-                        font-size: 12px;
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-                    }
-                    .progressBar{
-                        width: 100%;
-                        height: 4px;
-                    }
-                    .timeElapse{
-                        width: 100%;
-                        color: var(--bg-Desire);
-                        font-size: 12px;
-                        text-align: left;
-                    }
+              .productDetail {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: right;
+                align-items: center;
+                & h3 {
+                  font-size: 12px;
+                  color: var(--bg-Genie);
                 }
+                .productColor {
+                  width: 14px;
+                  height: 14px;
+                  border-radius: 50%;
+                }
+                .colorName {
+                  width: calc(100% - 64px);
+                  color: var(--bg-Midnight-Sky);
+                  margin-right: 8px;
+                  font-size: 10px;
+                }
+                .productRate {
+                  color: var(--bg-Genie);
+                  font-size: 12px;
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                }
+                .progressBar {
+                  width: 100%;
+                  height: 4px;
+                }
+                .timeElapse {
+                  width: 100%;
+                  color: var(--bg-Desire);
+                  font-size: 12px;
+                  text-align: left;
+                }
+              }
               .price {
                 width: 100%;
                 height: 45px;
@@ -150,7 +150,6 @@
             }
           }
         }
-       
       }
     }
   }
